@@ -37,7 +37,6 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 - **Git** installed
 - **Python + Jupyter** installed (e.g., via Anaconda or `pip install jupyter`)
-- Ability to install/run **Wolfram Engine** (Wolfram Language)
 
 ---
 
@@ -51,7 +50,7 @@ brew install --cask wolfram-engine
 
 ### Other platforms
 
-You can also download and install Wolfram Engine from Wolfram’s official website.
+You can also download and install Wolfram Engine from Wolfram’s official <a href="https://www.wolfram.com/engine">website</a>.
 
 ---
 
