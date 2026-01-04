@@ -145,10 +145,21 @@ Expected output: `Example.nb` → `Example.ipynb`
 
 In Jupyter (with Wolfram kernel):
 
+- open `jupyter_example.ipynb`
 - `File → Save and Export Notebook As → Executable Script`
-- Output: `jupyter_mathematica.m`
+- Output: `jupyter_example.m`
 
-Then open/read that `.m` in Mathematica as needed.
+
+In Mathematica notebook:
+
+```wl
+txt = Import["/Users/wjl/Downloads/jupyter_example.m", "Text"];
+cells = Cell[#, "Input"] & /@ StringSplit[txt, "\n\n"];
+nb = CreateDocument[cells];
+```
+
+Then Evaluation → Evaluate Notebook
+
 
 ### Method 2: `.ipynb` → Markdown → Import into Wolfram as a notebook
 
