@@ -101,22 +101,6 @@ Now you could you Wolfram engine in Jupyter notebook.
 
 
 
----
-
-
-```bash
-git clone https://github.com/divenex/mathematica2jupyter
-```
-
-### 2) Run it in the Mathematica notebook
-
-```bash
-Get["/Your path/Mathematica2Jupyter.wl"];  \
-Needs["Mathematica2Jupyter`"]  \
-Mathematica2Jupyter["/Your path/Example.nb", "ipynb"] 
-```
-
-
 
 ---
 
