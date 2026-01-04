@@ -23,7 +23,6 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 - [Prerequisites](#prerequisites)
 - [Install Wolfram Engine in Jupyter](#install-wolfram-engine)
-- [Enable WolframLanguageForJupyter (Jupyter Kernel)](#enable-wolframlanguageforjupyter-jupyter-kernel)
 - [Common: Load a `.wl` File in Jupyter](#common-load-a-wl-file-in-jupyter)
 - [Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)](#conversion-a-mathematica-nb--jupyter-ipynb-mathematica2jupyter)
 - [Conversion B: Jupyter `.ipynb` → Mathematica `.nb` (Export Script / Markdown Import)](#conversion-b-jupyter-ipynb--mathematica-nb-export-script--markdown-import)
