@@ -23,7 +23,7 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 - [Prerequisites](#prerequisites)
 - [Install Wolfram Engine in Jupyter](#install-wolfram-engine-in-jupyter)
-- [Common: Load a `.wl` File in Jupyter](#common-load-a-wl-file-in-jupyter)
+- [Convert Mathematica.nb to jupyter.ipynb with package Mathematica2Jupyter](#convert-Mathematica-nb-to-jupyter-ipynb-with-package-mathematica2Jupyter)
 - [Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)](#conversion-a-mathematica-nb--jupyter-ipynb-mathematica2jupyter)
 - [Conversion B: Jupyter `.ipynb` → Mathematica `.nb` (Export Script / Markdown Import)](#conversion-b-jupyter-ipynb--mathematica-nb-export-script--markdown-import)
 - [Conversion C: Jupytext Workflow (`.ipynb` → `.wolfram` → `.nb`)](#conversion-c-jupytext-workflow-ipynb--wolfram--nb)
@@ -104,13 +104,28 @@ Now you could you Wolfram engine in Jupyter notebook.
 
 ---
 
-## Common: Load a `.wl` File in Jupyter
+## Convert Mathematica.nb to jupyter.ipynb with package Mathematica2Jupyter
 
-Inside a Wolfram kernel notebook cell:
+The Mathematica2Jupyter Wolfram Language package provides a function to convert
+Mathematica notebooks (.nb files) into either Jupyter Notebook files (.ipynb)
+or VS Code Notebook files (.wlnb/.vsnb). 
 
-```wl
-Get["/tmp/LInfinitySolve-1-0-0-definition.wl"]
+### 1) download the package of Mathematica2Jupyter
+
+```bash
+git clone https://github.com/divenex/mathematica2jupyter
 ```
+
+### 2) Run it in the Mathematica notebook
+
+```bash
+Get["/Your path/Mathematica2Jupyter.wl"];  \
+Needs["Mathematica2Jupyter`"]  \
+Mathematica2Jupyter["/Your path/Example.nb", "ipynb"] 
+```
+
+
+
 
 ---
 
