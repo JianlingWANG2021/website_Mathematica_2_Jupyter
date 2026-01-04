@@ -23,7 +23,6 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 - [Prerequisites](#prerequisites)
 - [Install Wolfram Engine in Jupyter](#install-wolfram-engine-in-jupyter)
-- [Convert Mathematica.nb to jupyter.ipynb with package Mathematica2Jupyter](#convert-Mathematica-nb-to-jupyter-ipynb-with-package-mathematica2Jupyter)
 - [Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)](#conversion-a-mathematica-nb--jupyter-ipynb-mathematica2jupyter)
 - [Conversion B: Jupyter `.ipynb` → Mathematica `.nb` (Export Script / Markdown Import)](#conversion-b-jupyter-ipynb--mathematica-nb-export-script--markdown-import)
 - [Conversion C: Jupytext Workflow (`.ipynb` → `.wolfram` → `.nb`)](#conversion-c-jupytext-workflow-ipynb--wolfram--nb)
@@ -104,13 +103,6 @@ Now you could you Wolfram engine in Jupyter notebook.
 
 ---
 
-## Convert Mathematica.nb to jupyter.ipynb with package Mathematica2Jupyter
-
-The Mathematica2Jupyter Wolfram Language package provides a function to convert
-Mathematica notebooks (.nb files) into either Jupyter Notebook files (.ipynb)
-or VS Code Notebook files (.wlnb/.vsnb). 
-
-### 1) download the package of Mathematica2Jupyter
 
 ```bash
 git clone https://github.com/divenex/mathematica2jupyter
@@ -126,7 +118,6 @@ Mathematica2Jupyter["/Your path/Example.nb", "ipynb"] 
 
 
 
-
 ---
 
 ## Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)
@@ -135,17 +126,21 @@ Mathematica2Jupyter["/Your path/Example.nb", "ipynb"] 
 
 - Script: `Mathematica2Jupyter.wl`
 - Repo: `https://github.com/divenex/mathematica2jupyter`
+```bash
+git clone https://github.com/divenex/mathematica2jupyter
+```
+
 
 ### 2) Convert inside Mathematica / Wolfram Language
 
 ```wl
-Get["/Users/wjl/WorkIDP/Wolfram/Mathematica2Jupyter.wl"];
+Get["/Your path to /mathematica2jupyter/Mathematica2Jupyter.wl"];
 Needs["Mathematica2Jupyter`"];
-
-Mathematica2Jupyter["/Users/wjl/WorkIDP/Wolfram/test/Example.nb", "ipynb"]
+Mathematica2Jupyter["/Your path to your script/Example.nb", "ipynb"]
 ```
 
 Expected output: `Example.nb` → `Example.ipynb`
+
 
 ### Alternative: `.nb` → `.md` → `.ipynb`
 
