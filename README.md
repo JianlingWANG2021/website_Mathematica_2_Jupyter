@@ -12,9 +12,6 @@ Université d'Orléans, Université de Tours, CNRS, IDP, UMR 7013, Orléans, Fra
 </div>
 
 
-Here is a concise explanation on the conversion from Mathematica notebook script to Jupyter Notebook, and verse vice. 
-
-
 > This README summarizes a practical workflow to install **Wolfram Engine**, enable the **WolframLanguageForJupyter** kernel in **Jupyter**, and convert between **Mathematica Notebooks (`.nb`)** and **Jupyter Notebooks (`.ipynb`)**.
 
 ---
