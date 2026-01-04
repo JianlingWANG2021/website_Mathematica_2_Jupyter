@@ -92,8 +92,7 @@ cd WolframLanguageForJupyter
 ```
 
 
-Now you could you Wolfram engine in Jupyter notebook.
-
+Now you can use Wolfram engine in Jupyter notebook.
 
 
 
@@ -157,30 +156,6 @@ nb = CreateDocument[cells];
 
 Then Evaluation → Evaluate Notebook
 
-
-### Method 2: `.ipynb` → Markdown → Import into Wolfram as a notebook
-
-#### Steps
-
-1. Convert a Jupyter notebook to Markdown:
-
-```bash
-jupyter your_notebook.ipynb --to markdown --output your_notebook.md
-```
-
-2. Import the Markdown and create a notebook in Wolfram Language:
-
-```wl
-nb = Import["/path/to/your_notebook.md", "Markdown"];
-NotebookPut[nb]
-```
-
-#### Alternative: use `ResourceFunction["MarkdownImport"]`
-
-```wl
-nb = ResourceFunction["MarkdownImport"]["/path/to/your_notebook.md"];
-NotebookPut[nb]
-```
 
 ---
 
