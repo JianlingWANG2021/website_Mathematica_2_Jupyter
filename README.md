@@ -122,7 +122,7 @@ Mathematica2Jupyter["/Your path/Example.nb", "ipynb"] 
 
 ## Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)
 
-The Mathematica2Jupyter Wolfram Language package provides a function to convert
+The <a href="https://github.com/divenex/mathematica2jupyter">Mathematica2Jupyter</a>  Wolfram Language package provides a function to convert
 Mathematica notebooks (.nb files) into either Jupyter Notebook files (.ipynb)
 or VS Code Notebook files (.wlnb/.vsnb). 
 
