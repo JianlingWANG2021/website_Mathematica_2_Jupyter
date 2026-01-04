@@ -198,19 +198,21 @@ pip install jupytext
 ### 2) Pair/convert `.ipynb` with Wolfram text format
 
 ```bash
-jupytext --set-formats ipynb,wolfram MyNotebook.ipynb
+jupytext --set-formats ipynb,wolfram         jupyter_example.ipynb 
 ```
 
 This produces (or pairs) a file like:
 
-- `jupyter_mathematica.wolfram`
+- `jupyter_example.wolfram`
 
 ### 3) Import into Mathematica and save as `.nb`
 
 ```wl
-code = Import["/Users/wjl/WorkIDP/Wolfram/jupyter_to_mathematica/jupyter_mathematica.wolfram", "Text"];
+code = Import["/Your path to/jupyter_example.wolfram", "Text"];
 nb = CreateDocument[Cell[#, "Input"] & /@ StringSplit[code, "\n\n"]];
 ```
+
+Then Evaluation → Evaluate Notebook
 
 Then in Mathematica: `File → Save As...` and save as `.nb`.
 
