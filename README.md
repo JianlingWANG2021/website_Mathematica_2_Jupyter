@@ -22,7 +22,7 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Install Wolfram Engine](#install-wolfram-engine)
+- [Install Wolfram Engine in Jupyter](#install-wolfram-engine)
 - [Enable WolframLanguageForJupyter (Jupyter Kernel)](#enable-wolframlanguageforjupyter-jupyter-kernel)
 - [Common: Load a `.wl` File in Jupyter](#common-load-a-wl-file-in-jupyter)
 - [Conversion A: Mathematica `.nb` → Jupyter `.ipynb` (Mathematica2Jupyter)](#conversion-a-mathematica-nb--jupyter-ipynb-mathematica2jupyter)
@@ -40,9 +40,9 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 ---
 
-## Install Wolfram Engine
+## Install Wolfram Engine in Jupyter
 
-### macOS (Homebrew)
+### 1) Install Wolfram Engine in Jupyter for  macOS (Homebrew)
 
 ```bash
 brew install --cask wolfram-engine
@@ -54,33 +54,10 @@ You can also download and install Wolfram Engine from Wolfram’s official <a hr
 
 ---
 
-## Enable WolframLanguageForJupyter (Jupyter Kernel)
 
-### 1) Clone the WolframLanguageForJupyter repository
+### 2) Make Wolfram Language engine  available:
 
-```bash
-git clone https://github.com/WolframResearch/WolframLanguageForJupyter.git
-cd WolframLanguageForJupyter
-```
-
-### 2) Install/register the kernel
-
-```bash
-./configure-jupyter.wls add
-```
-
-> Note: You may also see `./configure-jupyter.wls build` in docs.  
-> `build` is for *packaging* a `.paclet` file, while `add` is typically what you want for installing/adding the Jupyter kernel locally.
-
-### 3) Activate Wolfram Engine (first time only)
-
-```bash
-wolframscript -activate
-```
-
-Follow the prompts to sign in and activate.
-
-### 4) Set the `WolframKernel` path (macOS example)
+Set the `WolframKernel` path (macOS example)
 
 ```bash
 export WolframKernel="/Applications/Wolfram Engine.app/Contents/MacOS/WolframKernel"
@@ -91,6 +68,40 @@ To make it persistent, put it into `~/.zshrc` or `~/.bashrc`, then reload:
 ```bash
 source ~/.zshrc
 ```
+
+
+### 3) Get Wolfram Language engine free license on the website Wolfram with your account.
+From <a href="https://www.wolfram.com/engine/">here</a> to get free license for Wolfram engine.
+
+### 4) Make  Wolfram Language engine  activate 
+
+```bash
+wolframscript  -activate
+```
+Follow the prompts to sign in and activate by inputing your account name and password for activation 
+
+
+### 5) Make the Wolfram Language available in Jupyter
+
+Clone the <a href="https://github.com/WolframResearch/WolframLanguageForJupyter?tab=readme-ov-file">WolframLanguageForJupyter</a> repository as belowing:
+
+```bash
+git clone https://github.com/WolframResearch/WolframLanguageForJupyter.git
+cd WolframLanguageForJupyter
+```
+
+ Install/register the kernel
+
+```bash
+./configure-jupyter.wls add
+```
+
+
+Now you could you Wolfram engine in Jupyter notebook.
+
+
+
+
 
 ---
 
