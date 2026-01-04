@@ -42,7 +42,7 @@ Here is a concise explanation on the conversion from Mathematica notebook script
 
 ## Install Wolfram Engine in Jupyter
 
-### 1) Install Wolfram Engine in Jupyter for  macOS (Homebrew)
+### 1) Install Wolfram Engine for  macOS (Homebrew)
 
 ```bash
 brew install --cask wolfram-engine
