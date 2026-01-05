@@ -128,10 +128,10 @@ Expected output: `Example.nb` → `Example.ipynb`
 
 ### Alternative: `.nb` → `.md` → `.ipynb`
 
-- In Mathematica: **Save As** Markdown → `mathematica.md`
-- In Jupyter:
-  1. Import `mathematica.md`
-  2. Save As `jupyter_notebook.ipynb`
+As the official suggestions, to convert regular Notebooks to Jupyter notebooks you could export a 
+given <a href="https://reference.wolfram.com/language/ref/format/Markdown.html">notebook to markdown</a> 
+and then transform this generated markdown file to a jupyter notebook.
+
 
 ---
 
@@ -194,7 +194,9 @@ Then in Mathematica: `File → Save As...` and save as `.nb`.
 
 - Conversion tooling may behave differently across OSes/environments; formatting may not always be identical.
 - Replace all example paths with your real local paths.
-- `export WolframKernel=...` only applies to the current terminal session unless you add it to your shell profile.
+- According to the official support there should be a way to conversion between Mathematica.nb and Jupyter.ipynb with Markdown, but I am failed on this.
+- The Mathematica2Jupyter package is failed on my computer, which should be tested on different machine
+
 
 ---
 
