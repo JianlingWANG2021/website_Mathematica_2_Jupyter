@@ -125,14 +125,13 @@ Mathematica2Jupyter["/Your path to your script/Example.nb", "ipynb"]
 
 Expected output: `Example.nb` → `Example.ipynb`
 
-
+<--
 ### Alternative: `.nb` → `.md` → `.ipynb`
-
 As the official suggestions, to convert regular Notebooks to Jupyter notebooks you could export a 
 given <a href="https://reference.wolfram.com/language/ref/format/Markdown.html">notebook to markdown</a> 
 and then transform this generated markdown file to a jupyter notebook.
-
-**I need to further test this **
+-->
+**I need to further test this**
 
 ---
 
