@@ -195,8 +195,6 @@ Then in Mathematica: `File → Save As...` and save as `.nb`.
 - Conversion tooling may behave differently across OSes/environments; formatting may not always be identical.
 - Replace all example paths with your real local paths.
 - **According to the official support there should be a way to conversion between Mathematica.nb and Jupyter.ipynb with Markdown, but I am failed on this. I need further explore.**
-- **The Mathematica2Jupyter package is failed on my computer, which should be tested on different machine with different Mathematica.**
-
 
 ---
 
